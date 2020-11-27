@@ -1,0 +1,33 @@
+*{
+     padding: 0;
+     margin: 0;
+     overflow: hidden;
+     background-color: azure;
+}
+
+.container{
+     margin-top: 350px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     flex-direction: column;
+     font-family: Arial, Helvetica, sans-serif;
+     color: aqua;
+}
+
+.preloader{
+     width: 200px;
+     height: 200px;
+     margin: auto;
+     position: relative;
+     background: url('../img/preloader.png') repeat-x;
+     background-position: 0;
+     animation: animpreloader 1.5s steps(11) infinite;
+     
+}
+
+@keyframes animpreloader {
+     0%{ background-position: 0;}
+     100%{ background-position: -2200px;}
+}
